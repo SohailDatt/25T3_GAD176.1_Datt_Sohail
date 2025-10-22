@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SimpleAiEnemy : MonoBehaviour
 {
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
 
     //moves towards a tarfet object
     //we need:

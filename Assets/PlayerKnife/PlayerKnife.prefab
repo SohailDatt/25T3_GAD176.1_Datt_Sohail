@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1412088669558998272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 59875907010616777}
+  m_Layer: 0
+  m_Name: SlashPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &59875907010616777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412088669558998272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.28, z: 0.673}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8971746663154696131}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4494657036185221443
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +43,7 @@ GameObject:
   - component: {fileID: 8622187872111642680}
   - component: {fileID: 1975893549282075583}
   - component: {fileID: 7511462240374432427}
+  - component: {fileID: 3318955633988755132}
   m_Layer: 0
   m_Name: PlayerKnife
   m_TagString: Untagged
@@ -28,11 +60,12 @@ Transform:
   m_GameObject: {fileID: 4494657036185221443}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27447224, y: 2.5102, z: 0.25}
-  m_LocalScale: {x: 0.047796726, y: 0.2092197, z: 0.7114445}
+  m_LocalPosition: {x: 0.451, y: -0.202, z: 1.322}
+  m_LocalScale: {x: 0.04779673, y: 0.20921971, z: 0.7114445}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4300263307294778645}
+  - {fileID: 59875907010616777}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8622187872111642680
@@ -109,6 +142,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3318955633988755132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4494657036185221443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafbf349e82c8fe4ab4550b73bfafd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knifeSlash: {fileID: 2634188598715589940, guid: 25bc5221c613dec42b2a2f43256b4bab, type: 3}
+  knifePoint: {fileID: 1412088669558998272}
+  slashSpeed: 850
 --- !u!1 &8118990455772011324
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,8 +185,8 @@ Transform:
   m_GameObject: {fileID: 8118990455772011324}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.671}
-  m_LocalScale: {x: 1.8895979, y: 1.1099797, z: 0.98586}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5744}
+  m_LocalScale: {x: 1.8895979, y: 1.1099797, z: 0.87859845}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8971746663154696131}

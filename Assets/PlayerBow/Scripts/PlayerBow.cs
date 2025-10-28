@@ -2,7 +2,7 @@ using UnityEngine;
 using StarterAssets;
 using Unity.VisualScripting;
 
-public class PlayerBow : MonoBehaviour
+public class PlayerBow : WeaponParent
 {
     private StarterAssetsInputs _input;
     [SerializeField]
@@ -21,14 +21,14 @@ public class PlayerBow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_input.playerShoot)
+        if (_input.attack)
         {
-            OnPlayerShoot();
-            _input.playerShoot = false;
+            Attack();
+            _input.attack = false;
         }
     }
 
-    void OnPlayerShoot()
+    public override void Attack()
     {
         Debug.Log("Shoot!");
         GameObject arrow = Instantiate(arrowPrefab, arrowPoint.transform.position, transform.rotation);

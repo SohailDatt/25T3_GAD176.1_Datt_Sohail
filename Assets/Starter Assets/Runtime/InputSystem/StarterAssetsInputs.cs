@@ -12,6 +12,7 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
+		
 
 		public bool attack;
 
@@ -47,10 +48,6 @@ namespace StarterAssets
 		}
 
 		
-
-
-
-
 		public void OnAttack(InputValue value)
 		{
 			attack = value.isPressed;
